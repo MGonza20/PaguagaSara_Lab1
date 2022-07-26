@@ -141,10 +141,10 @@ class Renderer(object):
 
             self.glPoint(x, y, clrIn)
             # Basandose en el algoritmo de Flood Fill y utilizando Depth-first search
-            self.glFlood(fig, x - 1, y, clrBg, clrIn)  # pixel hacia arriba
-            self.glFlood(fig, x + 1, y, clrBg, clrIn)  # pixel hacia abajo
-            self.glFlood(fig, x, y - 1, clrBg, clrIn)  # pixel hacia la izquierda
-            self.glFlood(fig, x, y + 1, clrBg, clrIn)  # pixel hacia la derecha
+            self.glFlood(fig, x - 1, y, clrBg, clrIn)  
+            self.glFlood(fig, x + 1, y, clrBg, clrIn)  
+            self.glFlood(fig, x, y - 1, clrBg, clrIn)  
+            self.glFlood(fig, x, y + 1, clrBg, clrIn)  
 
 
     def glFill(self, fig, clrBg=None, clrIn=None):
